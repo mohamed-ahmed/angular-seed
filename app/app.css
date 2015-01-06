@@ -29,4 +29,13 @@
   padding: 0;
 }
 
-.ace_editor { height: 200px; }
+.ace_editor { 
+  height: 100%;
+  width: 100%;
+}
+
+
+#editor-wrapper{
+  height : 100%;
+  width : 100%;
+}
