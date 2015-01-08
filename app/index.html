@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="table.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bower_components/angular-ui-tree/dist/angular-ui-tree.min.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -42,26 +43,7 @@
       <div id="middle-inner">
         <div id="middle-left">
           <div id="middle-left-inner">
-            <p>Folders</p>
-            <div id="accordion" class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Folder1</a></h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse initial-scale">
-                  <div class="panel-body">file.js
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title"><a data-toggle="collapse" href="#collapseTwo">subFolder2</a></h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse initial-scale">
-                        <div class="panel-body">file2.js</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div ng-include="'fileExplorer/fileExplorer.html'"></div>
           </div>
         </div>
         <div id="middle-right">
@@ -80,8 +62,10 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-ui-tree/dist/angular-ui-tree.js"></script>
   <script src="app.js"></script>
   <script src="editor/editor.js"></script>
+  <script src="fileExplorer/fileExplorer.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>

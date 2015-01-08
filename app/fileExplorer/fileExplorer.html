@@ -1,0 +1,25 @@
+
+<div ng-controller="FileExplorerCtrl">
+  <div ui-tree="tree-root" ui-tree-nodes="" ng-model="nodes">
+    <ol ui-tree-nodes="ui-tree-nodes" ng-model="list">
+      <li ng-repeat="node in list" ui-tree-node=" ">
+        <div>{{node.title}}</div>
+      </li>
+    </ol>
+  </div>
+  <script type="text/ng-template" id="nodes_renderer.html">
+    <div data-nodrag=''>
+    	{{node.title}}
+    </div>
+    <ol ui-tree-nodes="" ng-model="node.nodes">
+    	<li ng-repeat="node in node.nodes" ui-tree-node="" ng-include="'nodes_renderer.html'">
+    	</li>
+    </ol>
+    
+  </script>
+  <div ui-tree="">
+    <ol ui-tree-nodes="" ng-model="data" id="tree-root">
+      <li ng-repeat="node in data" ui-tree-node="" ng-include="'nodes_renderer.html'">{{node.title}}</li>
+    </ol>
+  </div>
+</div>
