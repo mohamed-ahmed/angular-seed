@@ -1,10 +1,16 @@
 'use strict';
 
-var editor = angular.module('myApp.fileExplorer', ['ui.tree']);
+var fileExplorer = angular.module('myApp.fileExplorer', ['ui.tree']);
 
 
 
-editor.controller('FileExplorerCtrl', ['$scope', function($scope) {
+fileExplorer.controller('FileExplorerCtrl', ['$scope', function($scope) {
+
+	$scope.toggle = function(scope) {
+      scope.toggle();
+      console.log("toggle");
+    };
+
 	$scope.data = [
 	{
 		"id": 1,
