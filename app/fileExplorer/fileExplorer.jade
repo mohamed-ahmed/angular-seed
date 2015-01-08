@@ -8,7 +8,7 @@ div(ng-controller='FileExplorerCtrl')
 	script(type='text/ng-template', id='nodes_renderer.html').
 		<div data-nodrag=''>
 			<a class='btn btn-xs' nodrag='' ng-click="toggle(this)">
-				<span class="glyphicon" ng-class="{ 'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed }"></span>
+				<span class="{{node.nodes.length ? 'glyphicon' : '' }}" ng-class="{ 'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed }"></span>
 			</a>
 			{{node.title}}
 		</div>
