@@ -36,44 +36,44 @@ body
 
 
 	div#table
-			div#top
-				div#top-inner
-					div(class="btn-group" id="menu")
-						button(type="button" class="btn btn-default dropdown-toggle menu-button" data-toggle="dropdown") File
-							span(class="caret")
-						ul(class="dropdown-menu" role="menu")
-							li
-								a(href="#") Open
-							li
-								a(href="#") Save
-							li
-								a(href="#") Close
-					div(class="btn-group" id="menu")
-						button(type="button" class="btn btn-default dropdown-toggle menu-button" data-toggle="dropdown") Edit
-							span(class="caret")
-						ul(class="dropdown-menu" role="menu")
-							li
-								a(href="#") Open
-							li
-								a(href="#") Save
-							li
-								a(href="#") Close
-					
+		div#top
+			div#top-inner
+				div(class="btn-group" id="menu")
+					button(type="button" class="btn btn-default dropdown-toggle menu-button" data-toggle="dropdown") File
+						span(class="caret")
+					ul(class="dropdown-menu" role="menu")
+						li
+							a(href="#") Open
+						li
+							a(href="#") Save
+						li
+							a(href="#") Close
+				div(class="btn-group" id="menu")
+					button(type="button" class="btn btn-default dropdown-toggle menu-button" data-toggle="dropdown") Edit
+						span(class="caret")
+					ul(class="dropdown-menu" role="menu")
+						li
+							a(href="#") Open
+						li
+							a(href="#") Save
+						li
+							a(href="#") Close
+				
 
-			div#middle
-				div#middle-inner
-					//- project explorer
-					div#middle-left
-						div#middle-left-inner
-							div(ng-include="'fileExplorer/fileExplorer.html'")
+		div#middle
+			div#middle-inner
+				//- project explorer
+				div#middle-left
+					div#middle-left-inner
+						div(ng-include="'fileExplorer/fileExplorer.html'")
 
-							
-					div#middle-right
-						//- div#middle-right-inner
-						//- code(id="code-area")
-						div(ng-include="'editor/editor.html'" id="editor-wrapper")
-			div#bottom
-				#bottom-inner
+						
+				div#middle-right
+					//- div#middle-right-inner
+					//- code(id="code-area")
+					div(ng-include="'editor/editor.html'" id="editor-wrapper")
+		div#bottom
+			#bottom-inner
 
 
 	//
