@@ -7,6 +7,7 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.version',
   'myApp.editor',
+  'myApp.table',
   'myApp.fileExplorer',
   'ui.tree'
 ]).

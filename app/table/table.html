@@ -1,0 +1,38 @@
+
+<div id="table">
+  <div id="top">
+    <div id="top-inner">
+      <div id="menu" class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle menu-button">File<span class="caret"></span></button>
+        <ul role="menu" class="dropdown-menu">
+          <li><a href="#">Open</a></li>
+          <li><a href="#">Save</a></li>
+          <li><a href="#">Close</a></li>
+        </ul>
+      </div>
+      <div id="menu" class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle menu-button">Edit<span class="caret"></span></button>
+        <ul role="menu" class="dropdown-menu">
+          <li><a href="#">Open</a></li>
+          <li><a href="#">Save</a></li>
+          <li><a href="#">Close</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="middle">
+    <div id="middle-inner">
+      <div id="middle-left">
+        <div id="middle-left-inner">
+          <div ng-include="'fileExplorer/fileExplorer.html'"></div>
+        </div>
+      </div>
+      <div id="middle-right">
+        <div ng-include="'editor/editor.html'" id="editor-wrapper"></div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom">
+    <div id="bottom-inner"></div>
+  </div>
+</div>
